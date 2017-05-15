@@ -1,0 +1,50 @@
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<ion-header>
+    <ion-navbar primary>
+        <button ion-button menuToggle="left" start>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>aLaRedonda</ion-title>
+        <button ion-button menuToggle="right" end>
+            <ion-icon name="calendar"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+<ion-content class="has-header">
+    <ion-card>
+        <ion-card-header text-center>
+            <strong>Configuración Avanzada de Agendas</strong>
+        </ion-card-header>
+    </ion-card>
+    {{viewTitle}}
+    <button ion-button icon-left [disabled]="isToday || calendar.mode=='day'" (click)="today(); onTimeSelected($event)">
+            <ion-icon name="clock"></ion-icon>Hoy
+    </button>
+    <button ion-button icon-left [disabled]="calendar.mode=='month'" (click)="changeMode('month')">
+            <ion-icon name="calendar"></ion-icon>Ver Mes
+    </button>   
+    <button ion-button icon-left [disabled]="calendar.mode=='day' || seleccionado==undefined" (click)="changeMode('day')">
+            <ion-icon name="eye"></ion-icon>Detallar
+    </button>
+    <ion-icon name="help-circle" (click)="presentToast()">Ayuda</ion-icon>
+    <calendar [eventSource]="eventSource" 
+        [dayviewNormalEventTemplate]="template"
+        [calendarMode]="calendar.mode"
+        [currentDate]="calendar.currentDate"
+        (onCurrentDateChanged)="onCurrentDateChanged($event)"
+        (onEventSelected)="onEventSelected($event)"
+        (onTitleChanged)="onViewTitleChanged($event)"
+        (onTimeSelected)="onTimeSelected($event)"
+        [allDayLabel]=null
+        [noEventsLabel]="todos" 
+        [startingDayWeek]=1 
+        [startingDayMonth]=1
+        step="30">
+    </calendar>
+    <!--[dayviewNormalEventTemplate]="template"
+    <template #template let-displayEvent="displayEvent">
+        <div class="unchecked fondo" *ngIf="displayEvent.event.num === 0">{{displayEvent.event.title}}</div>
+  </template>-->
+
+</ion-content>
+

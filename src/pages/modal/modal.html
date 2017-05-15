@@ -1,0 +1,48 @@
+<<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Agregar Producto
+        </ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="dismiss()">
+                    <span ion-text color="primary" showWhen="ios">Cancel</span>
+                <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="form" (ngSubmit)="insertProducto()" novalidate>
+        <ion-list>
+            <ion-input formControlName="idest" [hidden]="this.newest!==null" [value]="this.newest"></ion-input>
+            <ion-item>
+                <ion-label color="primary" floating>Nombre del Producto</ion-label>
+                <ion-input formControlName="nombre"></ion-input>
+            </ion-item>
+            <ion-item *ngIf="form.get('nombre').errors && form.get('nombre').dirty">
+                <p *ngIf="form.get('nombre').hasError('required')">Campo requerido</p>
+            </ion-item>
+            <ion-item>        
+                <ion-label color="primary" floating>Unidades</ion-label>
+                <ion-select formControlName="unidad">
+                    <ion-option *ngFor="let item of listaUni" value="{{item.id_unidades}}">{{item.unidad}}</ion-option>                   
+                </ion-select>
+            </ion-item>
+            <ion-item *ngIf="form.get('unidad').errors && form.get('unidad').dirty">
+                <p *ngIf="form.get('unidad').hasError('required')">Debe seleccionar un item</p>
+            </ion-item>      
+            <ion-item>
+                <ion-label color="primary" floating>Precio (COP$)</ion-label>
+                <ion-input type="number" formControlName="precio"></ion-input>
+            </ion-item>
+            <ion-item>
+                <button ion-button icon-left type="submit" [disabled]="form.invalid">
+                        <ion-icon name="add"></ion-icon>Agregar Producto
+                </button>
+            </ion-item>
+        </ion-list>
+
+    </form>
+
+</ion-content>

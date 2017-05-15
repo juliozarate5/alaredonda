@@ -1,0 +1,36 @@
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<ion-menu [content]="content" side="left" id="authenticated">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <button menuClose="left" ion-item *ngFor="let p of pages" (click)="openPage(p)">
+                    <ion-icon name="{{p.icon}}"></ion-icon>  {{p.title}}
+            </button>
+            <button menuClose="left" ion-item (click)="salir()">
+                    <ion-icon name="log-out"></ion-icon>  Salir de mi App
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-menu [content]="content" side="right" id="authenticated2">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Agendas</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <button menuClose="right" ion-item *ngFor="let p of agenda" (click)="openAgenda(p)">
+                    <ion-icon name="{{p.icon}}"></ion-icon>  {{p.title}}
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+

@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>aLaRedonda</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="cards-bg"> 
+    <ion-card no-padding>
+        <ion-refresher (ionRefresh)="doRefresh($event)">
+            <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+        <ion-card-header text-center>
+            <strong> Mis Productos</strong>
+        </ion-card-header>
+        <ion-card-content>     
+            <ion-searchbar autofocus type="text" name="nombre" 
+                           placeholder="Nombre de Producto" 
+                           [(ngModel)]="data.nombre"
+                           [showCancelButton]="false" 
+                           (ionCancel)="onCancel($event)" 
+                           (ionInput)="getProducto($event)" 
+                           [cancelButtonText]="Cancelar">                 
+            </ion-searchbar>
+            <ion-list>
+                <div *ngFor="let item of listaPr1">
+                    <ion-item>
+                        <ion-thumbnail >   
+                            <img *ngIf="item.foto!==null" width="95" height="95" src="http://54.68.202.167/alaredonda/uploaded/est_fotos/thumbnail/{{item.foto}}"/>
+                            <img *ngIf="item.foto===null" width="95" height="95" src="http://54.68.202.167/arl-est/view/img/img-no-disp.jpg"/>
+                        </ion-thumbnail>
+                        <p>Producto: {{item.nombre}}</p>
+                        <p>Precio ($):{{item.precio}}</p>
+                    </ion-item>
+                </div>
+                <div *ngFor="let item of listaProd">
+                    <ion-item  *ngIf="this.long > 0">
+                        <ion-thumbnail >   
+                            <img *ngIf="item.foto!==null" width="95" height="95" src="http://54.68.202.167/alaredonda/uploaded/est_fotos/thumbnail/{{item.foto}}"/>
+                            <img *ngIf="item.foto===null" width="95" height="95" src="http://54.68.202.167/arl-est/view/img/img-no-disp.jpg"/>
+                        </ion-thumbnail>
+                        <p>Producto: {{item.nombre}}</p>
+                        <p>Precio ($): {{item.precio}}</p>
+                    </ion-item>
+                </div>  
+            </ion-list>
+            <ion-list *ngIf="this.long <= 0" >
+                <p>No Hay Producto registrado!</p>
+            </ion-list>
+        </ion-card-content>  
+    </ion-card>
+</ion-content>
+<ion-footer>
+    <ion-fab right bottom>
+        <button ion-fab color="primary"><ion-icon name="arrow-dropleft"></ion-icon></button>
+        <ion-fab-list side="top">
+            <button (click)="presentPageModal()" ion-fab><ion-icon name="add"></ion-icon></button>
+        </ion-fab-list>
+    </ion-fab>
+</ion-footer>

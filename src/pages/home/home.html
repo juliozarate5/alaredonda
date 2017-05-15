@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-navbar primary>
+        <button ion-button menuToggle="left" start>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>aLaRedonda</ion-title>
+        <button ion-button menuToggle="right" end>
+            <ion-icon name="calendar"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+<ion-content class="cards-bg">
+    <ion-card>
+        <ion-refresher (ionRefresh)="doRefresh($event)">
+            <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+        <img img-responsive height="auto" *ngIf="listaEst?.logo.indexOf('http')!==0" src="http://54.68.202.167/alaredonda/uploaded/est_fotos/{{listaEst?.logo}}"/>
+        <!--<img width="50%" height="180" *ngIf="listaEst?.logo.indexOf('http')!==0" src="http://54.68.202.167/arl-est/view/img/img-no-disp.jpg"/>-->
+        <ion-card-header text-center>
+            <strong>Bienvenid@ {{this.newlocal}}</strong>
+        </ion-card-header>
+        <ion-card-content>        
+            <ion-col no-padding>
+                <ion-row>
+                    <p><ion-icon name='checkbox'></ion-icon>
+                    Establecimiento: {{listaEst?.nombre}}
+                    </p>
+                </ion-row>
+                <ion-row>
+                    <p><ion-icon name='home'></ion-icon>
+                    Direccion: {{listaEst?.direccion}}
+                    </p>
+                </ion-row>
+                <ion-row>
+                    <p><ion-icon name='phone-portrait'></ion-icon>
+                    Telefono: {{listaEst?.telefono}}
+                    </p>
+                </ion-row>
+                <ion-row>
+                    <p><ion-icon name='logo-twitch'></ion-icon>
+                    Descripcion: {{listaEst?.descripcion}}
+                    </p>
+                </ion-row>
+                <button ion-button color="primary" (click)="editar()" block>Editar Datos</button>
+            </ion-col>   
+        </ion-card-content>
+    </ion-card>
+</ion-content>
+

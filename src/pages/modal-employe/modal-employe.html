@@ -1,0 +1,50 @@
+<<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Agregar Empleado
+        </ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="dismiss()">
+                    <span ion-text color="primary" showWhen="ios">Cancel</span>
+                <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="form" (ngSubmit)="insertEmploye()" novalidate>
+        <ion-list>
+            <ion-input formControlName="idest" [hidden]="this.newest!==null" [value]="this.newest"></ion-input>
+            <ion-item>
+                <ion-label color="primary" floating>Nombre del Empleado</ion-label>
+                <ion-input formControlName="nombre"></ion-input>
+            </ion-item>
+            <ion-item *ngIf="form.get('nombre').errors && form.get('nombre').dirty">
+                <p *ngIf="form.get('nombre').hasError('required')">Campo requerido</p>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary" floating>Cedula</ion-label>
+                <ion-input type="number" formControlName="cedula"></ion-input>
+            </ion-item>
+            <ion-item *ngIf="form.get('cedula').errors && form.get('cedula').dirty">
+                <p *ngIf="form.get('cedula').hasError('required')">Campo requerido</p>
+            </ion-item>
+
+            <ion-item>        
+                <ion-label color="primary" floating>Tipo de Personal</ion-label>
+                <ion-select formControlName="tipo">
+                    <ion-option *ngFor="let item of listaTipoE" value="{{item.id_tipospersonal}}">{{item.tipo}}</ion-option>                   
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <button ion-button icon-left type="submit" [disabled]="form.invalid">
+                    <ion-icon name="add"></ion-icon>Agregar Personal
+                </button>
+            </ion-item>
+        </ion-list>
+
+    </form>
+
+</ion-content>

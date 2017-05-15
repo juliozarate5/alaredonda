@@ -1,0 +1,31 @@
+<<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Descripcion
+        </ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="dismiss()">
+                <span ion-text color="primary" showWhen="ios">Cancel</span>
+                <ion-icon name="close" showWhen="android,windows"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <input type="hidden" #titleInput1 value="{{lista?.id_galeria_est}}">
+        <input type="hidden" #titleInput2 value="{{lista?.imagen}}">
+        <ion-item>
+            <img width="351" height="350"  src="http://54.68.202.167/alaredonda/uploaded/est_fotos/{{lista?.imagen}}">
+        </ion-item>
+        <ion-item>
+            <button ion-button icon-left (click)="asignarPerfil(titleInput1.value, titleInput2.value)">
+                    <ion-icon name="tablet-portrait"></ion-icon>Colocar como perfil
+            </button>
+            <button ion-button icon-left (click)="eliminarImage(titleInput1.value, titleInput2.value)">
+                    <ion-icon name="trash"></ion-icon>Eliminar
+            </button>
+        </ion-item>
+    </ion-list>
+</ion-content>

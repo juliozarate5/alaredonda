@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>aLaRedonda</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+    <ion-card>
+        <ion-card-content>     
+            <ion-card-title>
+                Mis Domicilios
+            </ion-card-title>
+        </ion-card-content>  
+        <ion-refresher (ionRefresh)="doRefresh($event)">
+            <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+        <ion-card no-padding>
+            <ion-list>
+                <div *ngIf="this.long > 0" >
+                    <div *ngFor="let item of listaDom" ion-item>
+                        <p>Pedido: {{item.id_domicilio}}</p>
+                        <p>Dirección: {{item.direccion}}</p>
+                        <p>Valor Total ($): {{item.valortotal}}</p>
+                        <p>Fecha y Hora Pedido: {{item.fechaguardado}}</p>
+                        <button ion-button clear item-right (click)="verDetalle(item)"><ion-icon name="eye"></ion-icon></button>
+                    </div>
+                </div>
+            </ion-list>
+            <ion-list>
+                <div *ngIf="this.long <= 0" >
+                    <p>No hay pedidos pendientes!</p>
+                </div>
+            </ion-list>
+        </ion-card>
+        <ion-infinite-scroll
+            on-infinite="cargarAnteriores()"
+            distance="1%">
+        </ion-infinite-scroll>
+    </ion-card>
+</ion-content>

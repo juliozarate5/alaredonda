@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>aLaRedonda</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="cards-bg">
+    <ion-card>
+        <ion-card-content>     
+            <ion-card-title>
+                Detalle del Domicilio
+            </ion-card-title>
+        </ion-card-content>  
+        <ion-refresher (ionRefresh)="doRefresh($event)">
+            <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+
+        <ion-card no-padding>
+            <ion-list>
+                <div *ngFor="let item of lDomi" ion-item>
+                    <p>{{item.nombre}} - {{item.precio}}</p>
+                </div>
+                <ion-item>
+                    <ion-label color="primary" ><ion-icon name="cart"></ion-icon>Total Carrito: {{listaDom?.valortotal}}</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-label color="primary" >Paga con: {{listaDom?.pagacon}}</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-label color="primary" >Dirección: {{listaDom?.direccion}}</ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-label color="primary" >Comentarios del Cliente: {{listaDom?.comentarios}}</ion-label>
+                </ion-item>
+                <button ion-button clear item-right (click)="confirmar(listaDom?.id_domicilio)">  <ion-icon name="checkmark-circle-outline"></ion-icon>Confirmar</button>
+                <button ion-button clear item-right (click)="cancelar()"><ion-icon name="close-circle"></ion-icon>Cancelar</button>
+            </ion-list>    
+        </ion-card>
+    </ion-card>
+</ion-content>

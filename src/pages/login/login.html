@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="titulo">aLaRedonda</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class=" cards-bg">
+  <ion-card class="cards-list-demo">
+    <ion-card-header text-center>
+      LOGIN
+    </ion-card-header>
+  <ion-list>
+    <ion-item>
+      <ion-input type="number" name="username" placeholder="Cedula" required [(ngModel)]="data.username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" name="password" placeholder="Clave" required [(ngModel)]="data.password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="primary" block (click)="login()"><ion-icon name='log-in'></ion-icon></button>
+  </div>
+  </ion-card>
+
+</ion-content>
+<ion-footer>
+    <ion-toolbar class="titulo">
+        <p text-center>© parasuempresa</p>
+    </ion-toolbar>
+</ion-footer>

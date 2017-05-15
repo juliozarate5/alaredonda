@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>aLaRedonda</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="cards-bg">
+    <ion-card>
+        <ion-card-content>     
+            <ion-card-title>
+                Edicion de datos principales
+            </ion-card-title>
+        </ion-card-content>  
+        <ion-refresher (ionRefresh)="doRefresh($event)">
+            <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+
+        <ion-card no-padding>
+            <form #form="ngForm" (ngSubmit)="guardar(form)" *ngIf="estab">
+                <input type="hidden" [(ngModel)]="this.idest" name="id_establecimiento"/>
+                <ion-item>
+                    <ion-label color="primary" floating>Nombre del local</ion-label>
+                    <ion-input type="text" [(ngModel)]="estab.nombre" required name="nombre"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label color="primary" floating>Descripcion</ion-label>
+                    <ion-input type="text" [(ngModel)]="estab.descripcion" required name="descripcion"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label color="primary" floating>Direccion</ion-label>
+                    <ion-input type="text" [(ngModel)]="estab.direccion" required name="direccion"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label color="primary" floating>Telefono</ion-label>
+                    <ion-input type="text" [(ngModel)]="estab.telefono" required name="telefono"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label color="primary" floating>Palabras clave (Ej: clave1, clave2, ...)</ion-label>
+                    <ion-textarea [(ngModel)]="estab.tags" required name="tags"></ion-textarea>
+                </ion-item>
+                <button ion-button type="submit" block>Guardar</button>
+            </form>
+        </ion-card>
+    </ion-card>
+</ion-content>

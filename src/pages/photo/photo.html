@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>aLaRedonda</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-card>
+        <ion-card-header text-center>
+            <strong> Mis Fotos</strong>
+        </ion-card-header>
+        <ion-card-content>     
+            <ion-row>
+                <ion-col *ngFor="let item of listaGal " col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3> 
+                    <ion-card >
+                        <input type="hidden" #titleInput value="{{item.id_galeria_est}}">
+                        <ion-card-content *ngIf="item.principal !== '0'" class='ppal'> Foto de Perfil
+                            <img  (click)="openModal(titleInput.value)" img-responsive height="95" width="95" src="http://54.68.202.167/alaredonda/uploaded/est_fotos/thumbnail/{{item.imagen}}"/>
+                        </ion-card-content>
+                        <ion-card-content *ngIf="item.principal === '0'">
+                            <img  (click)="openModal(titleInput.value)" img-responsive height="95" width="95" src="http://54.68.202.167/alaredonda/uploaded/est_fotos/thumbnail/{{item.imagen}}"/>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>   
+
+        </ion-card-content>
+    </ion-card>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+</ion-content>
+<ion-footer>
+    <img class="image" src="{{pathForImage(lastImage)}}" style="width: 50%" [hidden]="lastImage === null">
+         <p [hidden]="lastImage !== null">Por favor, seleccione foto</p>
+    <ion-toolbar color="primary">
+        <ion-buttons>
+            <button ion-button icon-left (click)="presentActionSheet()">
+                    <ion-icon name="camera"></ion-icon>Seleccionar Foto
+            </button>
+            <button ion-button icon-left (click)="uploadImage()" [disabled]="lastImage === null">
+                    <ion-icon name="cloud-upload"></ion-icon>Subir
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-footer>
