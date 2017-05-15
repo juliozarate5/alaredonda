@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">aLaredonda-Establecimientos</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="google_app_id" translatable="false">103da35e7260ecce13fdaa2a55263e91cd964369f0678448</string>
+</resources>

@@ -1,0 +1,67 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-filepath": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "com-sarriaroman-photoviewer": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-background-mode": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "ionic-plugin-deploy": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
+        }
+    }
+}

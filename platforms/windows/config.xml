@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.alaredondaestablecimientos.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>aLaredonda-Establecimientos</name>
+    <description>App Mobile aLaRedonda Establecimientos</description>
+    <author email="julio.martinez@parasuempresa.com" href="http://parasuempresa.com">Parasuempresa</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="http://ionic.local/*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="resources\android\icon\drawable-xhdpi-icon.png" />
+    <preference name="WindowsToastCapable" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-targetSdkVersion" value="23" />
+    <preference name="android-maxSdkVersion" value="25" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
+    <preference name="CrosswalkAnimatable" value="false" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="FadeSplashScreenDuration" value="2500" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="15000" />
+    <preference name="AutoHideScreenDelay" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="fade-splash-screen-duration" value="2.5" />
+</widget>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v13\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2bf893856577f5038c0b8007a43fda3b3c5beb23">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.android.support-support-v13-23.4.0_642905056e66886ed9de0e33b955440eba2e7fc4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.2.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cba8868595f6aaff54cf7d1798591108cf5611c">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.google.android.gms-play-services-gcm-10.2.4_4caa4a019d24ef22a0a431a199ec5be7df42330f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.google.android.gms-play-services-tasks-10.2.4_ec5f8b9a2b168a163b949b8c6becc5a2f255ff14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v13\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="be09545b7e6ff322c7286d2e80bed3b75b76c529">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\internal_impl-23.4.0_f9a6605279fcb1110f0fdee79d92ddd6b8b1811d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.commit451\PhotoView\1.2.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="890be6e1e56a883c9b407a11e067a61886dec123">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.commit451-PhotoView-1.2.4_5a3f7545ac2fc2f077defc822951d0b7657e3f33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\me.leolin\ShortcutBadger\1.1.12\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e9a38019c3b10c02d10fcf7942406b6f37c5ab62">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\me.leolin-ShortcutBadger-1.1.12_eb9e90a66696d79bf0765dc82b72e508210f94c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.android.support-support-fragment-26.0.0-alpha1_df8a235e99b5f44dfd331a5dfe19f991ba706dc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.android.support-support-v4-26.0.0-alpha1_5c748a26400fb42b88d4b575ea147d6de02ac138.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.android.support-support-compat-26.0.0-alpha1_487c4c471977a188047853d64350073436cefbae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.google.android.gms-play-services-base-10.2.4_1195a83474bd9d00b4db066f23981677b9cb2bc9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.android.support-support-media-compat-26.0.0-alpha1_95647be75aace796705108e2e9e9e3ec3f5aa33e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Luisk\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\picasso-2.5.2_e74532d5e8d6cb91f113a02697333109456d63ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a66f9b56c06851a77956c300f1bbf2c9b4b48ac">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\CordovaLib-unspecified-release_fe8daa2cdf11bc57eb8324b4b7c9939f79ff0b5e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e29e17feb5c194b0eee3cc76938b82472faee51">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\debug\CordovaLib-unspecified-debug_3acd85d47ff4a7088c86527f90b7eb5d2ca34ff6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\org.xwalk\xwalk_core_library\23.53.589.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="834071525d6d2707eb4c7f76b728d8cd14b17ae1">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\org.xwalk-xwalk_core_library-23.53.589.4_1a18cdc44b43c0df312d7324321b3fe4e4ddc174.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.android.support-support-core-utils-26.0.0-alpha1_02a8aa3605f8498b2ebebda87fb68b2c0c14d398.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\support-annotations-26.0.0-alpha1_8a57f9999ac2028dac427e00cd754d5fd09555e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.2.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="29d9916bd9ad8406a53edbafbbce5e18943aa882">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.google.android.gms-play-services-iid-10.2.4_22dfac12639f9d5ab2848e98545338e366572f41.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.android.support-support-core-ui-26.0.0-alpha1_268d06603a0746309c9fa77879d581b6bc3dba37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
+        <dex dex="D:\OneDrive\Documentos\ionic\alaredonda-establecimientos\platforms\android\build\intermediates\pre-dexed\armv7\release\com.google.android.gms-play-services-basement-10.2.4_462ec71d922eec247dbc8f760357b1859325de80.jar" />
+    </item>
+
+</items>

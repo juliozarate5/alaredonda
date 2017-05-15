@@ -1,0 +1,4 @@
+#Wed May 10 22:59:48 COT 2017
+base.0=D\:\\OneDrive\\Documentos\\ionic\\alaredonda-establecimientos\\platforms\\android\\build\\intermediates\\transforms\\dex\\armv7\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=D\:\\OneDrive\\Documentos\\ionic\\alaredonda-establecimientos\\platforms\\android\\build\\intermediates\\transforms\\dex\\armv7\\debug\\folders\\1000\\1f\\main\\classes.dex
