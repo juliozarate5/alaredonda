@@ -53,13 +53,13 @@
         },
         "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "com.ionicframework.alaredondaestablecimientos242089"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ionicframework.alaredondaestablecimientos242089"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.ionicframework.alaredondaestablecimientos242089"
-        },
-        "cordova-plugin-file": {
             "PACKAGE_NAME": "com.ionicframework.alaredondaestablecimientos242089"
         },
         "cordova-plugin-app-event": {

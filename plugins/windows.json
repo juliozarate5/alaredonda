@@ -51,13 +51,13 @@
         },
         "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "alaredonda-establecimientos"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "alaredonda-establecimientos"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "alaredonda-establecimientos"
-        },
-        "cordova-plugin-file": {
             "PACKAGE_NAME": "alaredonda-establecimientos"
         },
         "cordova-plugin-app-event": {

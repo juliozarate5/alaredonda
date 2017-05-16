@@ -60,6 +60,9 @@
         "phonegap-plugin-push": {
             "SENDER_ID": "103da35e7260ecce13fdaa2a55263e91cd964369f0678448",
             "PACKAGE_NAME": "com.alaredondaestablecimientos.app"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.alaredondaestablecimientos.app"
         }
     },
     "dependent_plugins": {
@@ -67,9 +70,6 @@
             "PACKAGE_NAME": "com.alaredondaestablecimientos.app"
         },
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.alaredondaestablecimientos.app"
-        },
-        "cordova-plugin-file": {
             "PACKAGE_NAME": "com.alaredondaestablecimientos.app"
         }
     }
